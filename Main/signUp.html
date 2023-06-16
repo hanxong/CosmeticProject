@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin: 50px;
+
+        }
+
+        .background {
+            background-color: white;
+            height: auto;
+            width: 90%;
+            max-width: 450px;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            padding: 30px;
+            flex-direction: column;
+        }
+
+        .login {
+            border: none;
+            border-bottom: 2px solid #D1D1D4;
+            background: none;
+            padding: 10px;
+            font-weight: 700;
+            transition: .2s;
+            width: 75%;
+        }
+        .login:active,
+        .login:focus,
+        .login:hover {
+            outline: none;
+            border-bottom-color: #6A679E;
+        }
+
+        .btn {            
+            border: none;
+            width: 75%;
+            background-color: #2f2b3b;
+            color: white;
+            padding: 15px 0;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        .btn:hover {
+            background-color: #595787;
+        }
+  </style>
+  </head>
+<body>
+  <h2>회원가입</h2>
+    <form action="/auth/register_process" method="post">
+    <p><input class="login" type="text" name="username" placeholder="아이디"></p>
+    <p><input class="login" type="password" name="pwd" placeholder="비밀번호"></p>    
+    <p><input class="login" type="password" name="pwd2" placeholder="비밀번호 재확인"></p>
+    <p><input class="login" type="email" name="email" placeholder="이메일 인증"></p>
+    <p><input class="btn" type="submit" value="제출"></p>
+    </form> 
+    <p><a href="/Main">메인화면으로 돌아가기</a></p>      
+    <p><a href="/auth/login">로그인화면으로 돌아가기</a></p>
+    <script>
+      console.log("재은아 눈떠라 눈 제발 눈떠라 눈 누누누누누누누누누누누누눈")
+    </script>
+</body>
+</html>
